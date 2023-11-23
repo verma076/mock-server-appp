@@ -1,0 +1,40 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marketplace</title>
+  <style>
+  </style>
+</head>
+<body>
+ 
+
+  <h2>Welcome to the Homepage</h2>
+
+    <button onclick="redirectTo('Admin')">Admin</button>
+
+    <button onclick="redirectTo('User')">User</button>
+ 
+
+  <script>
+
+
+function redirectTo(section) {
+  if (section === 'Admin') {
+ 
+    window.location.href = './Admin/login.html';
+  } else if (section === 'User') {
+ 
+    window.location.href = './User/user.html';
+
+  } else
+   {
+    alert('Invalid');
+  }
+}
+  </script>
+</body>
+</html>
